@@ -1,67 +1,110 @@
-main branch
+# RecyclerView - SleepQualityTracker with RecyclerView app
 
-## 1. Build your First App
+This is the toy app for Lesson 7 of the [Android App Development in Kotlin course on Udacity](https://classroom.udacity.com/courses/ud9012/).
 
-    Branch: app/dice-roller-cap-1-v1
-    Branch: app/dice-roller-cap-1-v2
-    v1: .java-version=1.8
-    v2 (current): .java-version=21
+## SleepQualityTracker with RecyclerView
 
-## 2. Explore More
+This app builds on the SleepQualityTracker you developed in Lesson 6.  In this lesson you'll learn how to display a list of results in a RecyclerView instead of a static ScrollView. You'll also learn how you can refactor your code to make it more efficient so it will be easier to maintain and test.
 
-    No apps.
+## Screenshots
 
-## 3. Layouts
+![Screenshot1](screenshots/sleep_tracker_recycler_home.png)
+![Screenshot2](screenshots/sleep_tracker_recycler_detail.png)
 
-    Branch: app/about-me-cap-3-v1
-    v1: .java-version=1.8
-    Branch: app/color-my-views-cap-3-v1
-    v1: .java-version=1.8
+## How to use this repo while taking the course
 
-## 4. App Navigation
 
-    Branch: app/android-trivia-cap-4-v1
-    v1: .java-version=1.8
+Each code repository in this class has a chain of commits that looks like this:
 
-## 5. Activity & Fragment Lifecycle
+![listofcommits](https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58befe2e_listofcommits/listofcommits.png)
 
-    Branch: app/dessert-pusher-cap-5-v1
-    v1: .java-version=1.8
+These commits show every step you'll take to create the app. Each commit contains instructions for completing the that step.
 
-## 6. App Architecture (UI Layer)
+Each commit also has a **branch** associated with it of the same name as the commit message, as seen below:
 
-    Branch: app/guess-the-world-cap-6-v1
-    v1: .java-version=1.8
+![branches](https://d17h27t6h515a5.cloudfront.net/topher/2017/April/590390fe_branches-ud855/branches-ud855.png
+)
+Access all branches from this tab.
 
-## 7. App Architecture (Persistence)
+![listofbranches](https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58befe76_listofbranches/listofbranches.png
+)
 
-    Branch: app/track-my-sleep-quality-app-cap-7-v1
-    v1: .java-version=21.0.8
 
-## 8. RecyclerView
+![branchesdropdown](https://d17h27t6h515a5.cloudfront.net/topher/2017/April/590391a3_branches-dropdown-ud855/branches-dropdown-ud855.png
+)
 
-    Branch: app/track-my-sleep-recyclerview-cap-8-v1
-    v1: .java-version=21.0.8
+The branches are also accessible from the drop-down in the "Code" tab.
 
-## 9. Connect to the Internet
+## Requirements
 
-    Branch: app/mars-real-estate-cap-9-v1
-    v1: .java-version=21.0.8
+1. Android Studio (Jellyfish or above)
+2. JDK 21 with `JAVA_HOME` environment variable set. If you don't have JDK 21 installed or `JAVA_HOME` is not set, consider using a tool like `sdkman` to simplify the process. Refer to the sdkman documentation for installation instructions: [sdkman installation](https://sdkman.io/install)
 
-## 10. Behind the Scenes
+## Working with the Course Code
 
-    Branch: app/dev-ubyte-cap-10-v1
-    v1: .java-version=21.0.8
+Here are the basic steps for working with and completing exercises in the repo.
 
-## 11. Designing for Everyone
+The basic steps are:
 
-    Branch: app/gdg-finder-udacity-cap-11-v1
-    v1: .java-version=21.0.8
+1. Clone the repo.
+2. Check out the branch corresponding to the step you want to attempt.
+3. Find and complete the TODOs.
+4. Optionally commit your code changes.
+5. Compare your code with the solution.
+6. Repeat steps 2-5 until you've gone trough all the steps to complete the toy app.
 
-## 12. What’s Next
 
-    No apps.
+**Step 1: Clone the repo**
 
-### Udacity
+As you go through the course, you'll be instructed to clone the different exercise repositories, so you don't need to set these up now. You can clone a repository from github in a folder of your choice with the command:
 
-    CODEOWNERS=@udacity/active-public-content
+```bash
+git clone https://github.com/udacity/REPOSITORY_NAME.git
+```
+
+**Step 2: Check out the step branch**
+
+As you go through different steps in the code, you'll be told which step you're on, as well as a link to the corresponding branch.
+
+You'll want to check out the branch associated with that step. The command to check out a branch would be:
+
+```bash
+git checkout BRANCH_NAME
+```
+
+**Step 3: Find and complete the TODOs**
+
+Once you've checked out the branch, you'll have the code in the exact state you need. You'll even have TODOs, which are special comments that tell you all the steps you need to complete the exercise. You can easily navigate to all the TODOs using Android Studio's TODO tool. To open the TODO tool, click the button at the bottom of the screen that says TODO. This will display a list of all comments with TODO in the project. 
+
+We've numbered the TODO steps so you can do them in order:
+![todos](https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58bf00e7_todos/todos.png
+)
+
+**Step 4: Commit your code changes**
+
+After You've completed the TODOs, you can optionally commit your changes. This will allow you to see the code you wrote whenever you return to the branch. The following git code will add and save **all** your changes.
+
+```bash
+git add .
+git commit -m "Your commit message"
+```
+
+**Step 5: Compare with the solution**
+
+Most exercises will have a list of steps for you to check off in the classroom. Once you've checked these off, you'll see a pop up window with a link to the solution code. Note the **Diff** link:
+
+![solutionwindow](https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58bf00f9_solutionwindow/solutionwindow.png
+)
+
+The **Diff** link will take you to a Github diff as seen below:
+![diff](https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58bf0108_diffsceenshot/diffsceenshot.png
+)
+
+All of the code that was added in the solution is in green, and the removed code (which will usually be the TODO comments) is in red. 
+
+You can also compare your code locally with the branch of the following step.
+
+## Report Issues
+Notice any issues with a repository? Please file a github issue in the repository.
+
+
