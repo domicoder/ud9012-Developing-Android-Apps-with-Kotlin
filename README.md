@@ -1,67 +1,122 @@
-main branch
+# Connect to the Internet - Mars Real Estate
 
-## 1. Build your First App
+This is the toy app for Lesson 8 of the [Android App Development in Kotlin course on Udacity](https://classroom.udacity.com/courses/ud9012/).
 
-    Branch: app/dice-roller-cap-1-v1
-    Branch: app/dice-roller-cap-1-v2
-    v1: .java-version=1.8
-    v2 (current): .java-version=21
+## MarsRealEstate
 
-## 2. Explore More
+MarsRealEstate is a simple demo app using ViewModel & LiveData with Retrofit, Glide and Moshi in Kotlin.
 
-    No apps.
+This app demonstrates the following views and techniques:
 
-## 3. Layouts
+* [Retrofit](https://square.github.io/retrofit/) to make api calls to an HTTP web service
+* [Moshi](https://github.com/square/moshi) which handles the deserialization of the returned JSON to Kotlin data objects 
+* [Glide](https://bumptech.github.io/glide/) to load and cache images by URL.
+  
+It leverages the following components from the Jetpack library:
 
-    Branch: app/about-me-cap-3-v1
-    v1: .java-version=1.8
-    Branch: app/color-my-views-cap-3-v1
-    v1: .java-version=1.8
+* [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)
+* [LiveData](https://developer.android.com/topic/libraries/architecture/livedata)
+* [Data Binding](https://developer.android.com/topic/libraries/data-binding/) with binding adapters
+* [Navigation](https://developer.android.com/topic/libraries/architecture/navigation/) with the SafeArgs plugin for parameter passing between fragments
 
-## 4. App Navigation
+## Screenshots
 
-    Branch: app/android-trivia-cap-4-v1
-    v1: .java-version=1.8
+![Screenshot 1](screenshots/screen_1.png)
+![Screenshot 2](screenshots/screen_2.png)
+![Screenshot 3](screenshots/screen_3.png)
 
-## 5. Activity & Fragment Lifecycle
+## How to use this repo while taking the course
 
-    Branch: app/dessert-pusher-cap-5-v1
-    v1: .java-version=1.8
 
-## 6. App Architecture (UI Layer)
+Each code repository in this class has a chain of commits that looks like this:
 
-    Branch: app/guess-the-world-cap-6-v1
-    v1: .java-version=1.8
+![listofcommits](https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58befe2e_listofcommits/listofcommits.png)
 
-## 7. App Architecture (Persistence)
+These commits show every step you'll take to create the app. Each commit contains instructions for completing the that step.
 
-    Branch: app/track-my-sleep-quality-app-cap-7-v1
-    v1: .java-version=21.0.8
+Each commit also has a **branch** associated with it of the same name as the commit message, as seen below:
 
-## 8. RecyclerView
+![branches](https://d17h27t6h515a5.cloudfront.net/topher/2017/April/590390fe_branches-ud855/branches-ud855.png
+)
+Access all branches from this tab.
 
-    Branch: app/track-my-sleep-recyclerview-cap-8-v1
-    v1: .java-version=21.0.8
+![listofbranches](https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58befe76_listofbranches/listofbranches.png
+)
 
-## 9. Connect to the Internet
 
-    Branch: app/mars-real-estate-cap-9-v1
-    v1: .java-version=21.0.8
+![branchesdropdown](https://d17h27t6h515a5.cloudfront.net/topher/2017/April/590391a3_branches-dropdown-ud855/branches-dropdown-ud855.png
+)
 
-## 10. Behind the Scenes
+The branches are also accessible from the drop-down in the "Code" tab.
 
-    Branch: app/dev-ubyte-cap-10-v1
-    v1: .java-version=21.0.8
+## Requirements
 
-## 11. Designing for Everyone
+1. Android Studio (Jellyfish or above)
+2. JDK 21 with `JAVA_HOME` environment variable set. If you don't have JDK 21 installed or `JAVA_HOME` is not set, consider using a tool like `sdkman` to simplify the process. Refer to the sdkman documentation for installation instructions: [sdkman installation](https://sdkman.io/install)
 
-    Branch: app/gdg-finder-udacity-cap-11-v1
-    v1: .java-version=21.0.8
+## Working with the Course Code
 
-## 12. What’s Next
+Here are the basic steps for working with and completing exercises in the repo.
 
-    No apps.
+The basic steps are:
 
-### Udacity
+1. Clone the repo.
+2. Check out the branch corresponding to the step you want to attempt.
+3. Find and complete the TODOs.
+4. Optionally commit your code changes.
+5. Compare your code with the solution.
+6. Repeat steps 2-5 until you've gone trough all the steps to complete the toy app.
 
-    CODEOWNERS=@udacity/active-public-content
+
+**Step 1: Clone the repo**
+
+As you go through the course, you'll be instructed to clone the different exercise repositories, so you don't need to set these up now. You can clone a repository from github in a folder of your choice with the command:
+
+```bash
+git clone https://github.com/udacity/REPOSITORY_NAME.git
+```
+
+**Step 2: Check out the step branch**
+
+As you go through different steps in the code, you'll be told which step you're on, as well as a link to the corresponding branch.
+
+You'll want to check out the branch associated with that step. The command to check out a branch would be:
+
+```bash
+git checkout BRANCH_NAME
+```
+
+**Step 3: Find and complete the TODOs**
+
+Once you've checked out the branch, you'll have the code in the exact state you need. You'll even have TODOs, which are special comments that tell you all the steps you need to complete the exercise. You can easily navigate to all the TODOs using Android Studio's TODO tool. To open the TODO tool, click the button at the bottom of the screen that says TODO. This will display a list of all comments with TODO in the project. 
+
+We've numbered the TODO steps so you can do them in order:
+![todos](https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58bf00e7_todos/todos.png
+)
+
+**Step 4: Commit your code changes**
+
+After You've completed the TODOs, you can optionally commit your changes. This will allow you to see the code you wrote whenever you return to the branch. The following git code will add and save **all** your changes.
+
+```bash
+git add .
+git commit -m "Your commit message"
+```
+
+**Step 5: Compare with the solution**
+
+Most exercises will have a list of steps for you to check off in the classroom. Once you've checked these off, you'll see a pop up window with a link to the solution code. Note the **Diff** link:
+
+![solutionwindow](https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58bf00f9_solutionwindow/solutionwindow.png
+)
+
+The **Diff** link will take you to a Github diff as seen below:
+![diff](https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58bf0108_diffsceenshot/diffsceenshot.png
+)
+
+All of the code that was added in the solution is in green, and the removed code (which will usually be the TODO comments) is in red. 
+
+You can also compare your code locally with the branch of the following step.
+
+## Report Issues
+Notice any issues with a repository? Please file a github issue in the repository.
